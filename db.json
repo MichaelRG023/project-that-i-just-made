@@ -1,0 +1,41 @@
+{
+
+
+"apexLegends":[
+    
+   {
+    "id": 1,
+   "name":"PathFinder",
+   "legend":"Recon Legend",
+   "voiceActor":"Chris Edgerly",
+   "img":""
+   
+   
+    } ,
+    {"id":2,
+    "name":"LifeLine",
+    "legend":"Support Legend",
+    "voiceActor":"Mela Lee",
+    "img":""
+    
+
+    },
+    {
+    "id":3,
+    "name":"Bloodhound",
+    "legend":"Recon Legend",
+    "voiceActor":"Allegra Clark",
+    "img":""
+    },
+
+
+    {
+    "id":4,
+    "name":"Wattson",
+    "legend":"Defensive Legend",
+    "voiceActor":"Justine Huxley",
+    "img":""
+     }
+]
+    
+}

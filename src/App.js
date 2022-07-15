@@ -1,25 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
 
+import { BrowserRouter, Route,Switch } from 'react-router-dom';
+import New from './New';
+import { useEffect } from 'react';
+
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+ useEffect(()=>{
+  fetch("http://localhost:3000/apexLegends")
+  .then(res=>res.json())
+  .then(console.log)
+ })
+  return (<>
+  <h1> -NavBar-</h1>
+  
+  <BrowserRouter>
+  <Route exact  path="/new" component={New} />
+  </BrowserRouter>
+  
+  
+  </>);
 }
+  
 
 export default App;
